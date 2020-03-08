@@ -1,0 +1,11 @@
+{% include "header.html" %}
+  <h1>Products</h1>
+    <img src= https://image.flaticon.com/icons/svg/707/707853.svg height=150>
+      <table align = "center">
+        <tr><th>Code</th><th>Name</th><th>Price</th></tr>
+        {% for product in product_list %}
+            <tr><td><a href="productdetails?code={{product["code"]}}">{{product["code"
+]}}</a></td><td>{{product["name"]}}</td><td>{{product["price"]}}</td></tr>
+{% endfor %}
+      </table>
+{% include "footer.html" %}

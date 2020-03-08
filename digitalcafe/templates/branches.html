@@ -1,0 +1,9 @@
+{% include "header.html" %}
+    <h1>Branches</h1>
+    <img src= https://image.flaticon.com/icons/svg/707/707860.svg height=150>
+      <ul>
+{% for branch in branch_list %}
+        <li><a href="branchdetails?code={{branch["code"]}}">{{branch["name"]}}</a></li>
+{% endfor %}
+      </ul>
+{% include "footer.html" %}

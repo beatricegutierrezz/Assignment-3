@@ -1,0 +1,10 @@
+{% include "header.html" %}
+        <h1>Branch Details</h1>
+        <img src = https://image.flaticon.com/icons/svg/707/707858.svg height= 150>
+        <table align= "center">
+           <tr><td>Code</td><td>{{ code }}</td></tr>
+            <tr><td>Branch Name</td><td>{{ branch["name"] }}</td></tr>
+            <tr><td>Phone Number</td><td>{{ branch["phonenumber"] }}</td></tr>
+        </table>
+        <a href="/branches">Back</a>
+{% include "footer.html" %}
